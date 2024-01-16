@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "464225659711",
+    "firebase_url": "https://taskhub-8cd9e-default-rtdb.firebaseio.com",
+    "project_id": "taskhub-8cd9e",
+    "storage_bucket": "taskhub-8cd9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464225659711:android:e79b02fe0840a09463c18a",
+        "android_client_info": {
+          "package_name": "com.example.project_bucarest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUHYrwj2dfpHE8ASYecfk9eUxX3M-qMc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

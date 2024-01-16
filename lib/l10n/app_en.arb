@@ -1,0 +1,134 @@
+{
+  "enterPassword": "Enter your password",
+  "@enterPassword": {
+    "description": "MDP"
+  },
+  "authFailed": "Authentication failed. Please check your email and password.",
+  "@authFailed": {
+    "description" : "Auth"
+  },
+  "emailProblem": "There is a problem. Please include \"@\" in your email.",
+  "@emailProblem" : {
+    "description": "E-mail"
+  },
+  "goToRegistration": "Go to Registration",
+  "@goToRegistration": {
+    "description" : "Registration"
+  },
+  "enterEmail": "Enter your Email",
+  "@enterEmail": {
+    "description": "EMAIL"
+  },
+  "back": "Back",
+  "@back": {
+    "description" : "retour"
+  },
+  "logIn": "Log in",
+  "@logIn" : {
+    "description" : "log"
+  },
+  "register" : "Register",
+  "@register" : {
+    "description" : "Register"
+  },
+  "alreadyEmail" : "This e-mail already assigned",
+  "@alreadyEmail" : {
+    "description" : "email already assigned"
+  },
+  "goToLogin": "Go to Login",
+  "@goToLogin": {
+    "description": "Login"
+  },
+  "noMeetings" : "No meetings this week.",
+  "@noMeeting" : {
+    "description" : "No Meeting"
+  },
+  "meetingIn" : "Meeting in",
+  "@meetingIn" : {
+    "description" : "Meeting in"
+  },
+  "startAt" : "Starts at",
+  "@startAt" : {
+    "description" : "Starts at"
+  },
+  "lastsFor" : "Lasts for",
+  "@lastsFor" : {
+    "description": "Lasts for"
+  },
+  "minutes" : "minutes",
+  "@minutes" : {
+    "description" : "minutes"
+  },
+  "day" : "Day:",
+  "@day" : {
+    "description" : "Day"
+  },
+  "weekOf" : "Week of",
+  "@weekOf" : {
+    "description" : "Week of"
+  },
+  "calendar" : "Calendar",
+  "@calendar" : {
+    "description": "Calendar"
+  },
+  "online" : "Online",
+  "@online" : {
+    "description": "online"
+  },
+  "offline" : "Offline",
+  "@offline" : {
+    "description" : "Offline"
+  },
+  "busy" : "Busy",
+  "@busy" : {
+    "description" : "busy"
+  },
+  "doNotDisturb" : "Do Not Disturb",
+  "@doNotDisturb" : {
+    "description" : "Do not disturb"
+  },
+  "onHoliday" : "On Holiday",
+  "@onHoliday" : {
+    "description" : "On Holiday"
+  },
+  "chooseStatus" : "Choose status:",
+  "@chooseStatus" : {
+  "description" : "Choose status"
+  },
+  "firstName" : "First Name:",
+  "@firstName" : {
+    "description" : "First Name"
+  },
+  "lastname" : "Last Name",
+  "@lastname" : {
+    "description" : "Last Name"
+  },
+  "profilePicture" : "Profile Picture:",
+  "@profilePicture" : {
+    "description" : "Profile Picture:"
+  },
+  "updateProfile" : "Update Profile",
+  "@updateProfile" : {
+    "description" : "Update Profile"
+  },
+  "deleteAccount" : "Delete Account",
+  "@deleteAccount" : {
+    "description" : "Delete Account"
+  },
+  "noInternetConnection" : "No internet Connection",
+  "@noInternetConnection" : {
+    "description": "No Internet Connection"
+  },
+  "meeting" : "Meetings",
+  "@meeting" :{
+    "description" : "Meeting"
+  },
+  "appLogo" : "The application logo",
+  "@appLogo" : {
+    "description" : "Appli logo"
+  },
+  "chooseParticipants" : "Choose participants",
+  "@chooseParticipants" : {
+    "description" : "Choose participants"
+  }
+}
