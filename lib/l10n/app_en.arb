@@ -11,6 +11,10 @@
   "@emailProblem" : {
     "description": "E-mail"
   },
+  "password6" : "The password should be at least 6 characters",
+  "@password6" : {
+  "descripton" : "Password"
+  },
   "goToRegistration": "Go to Registration",
   "@goToRegistration": {
     "description" : "Registration"

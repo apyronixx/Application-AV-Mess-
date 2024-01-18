@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:project_bucarest/constants.dart';
@@ -100,7 +102,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 if (!email.contains('@')) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text((AppLocalizations.of(context)!.authFailed)),
+                      content: Text((AppLocalizations.of(context)!.emailProblem)),
                     ),
                   );
                   return;
@@ -109,7 +111,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 if (password.length < 6) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text((AppLocalizations.of(context)!.emailProblem)),
+                      content: Text((AppLocalizations.of(context)!.password6)),
                     ),
                   );
                   return;

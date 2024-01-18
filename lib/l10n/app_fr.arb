@@ -2,6 +2,7 @@
   "enterPassword": "Entrez votre mot de passe",
   "authFailed": "Échec de l'authentification. Veuillez vérifier votre courriel et votre mot de passe.",
   "emailProblem": "Il y a un problème. Veuillez inclure \"@\" dans votre courriel.",
+  "password6" : "Le mot de passe doit comporter au moins 6 caractères",
   "goToRegistration": "Aller à l'inscription",
   "enterEmail": "Entrez votre mail",
   "back": "Retour",
