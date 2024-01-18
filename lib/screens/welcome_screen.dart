@@ -146,7 +146,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 ],
               ),
             ),
-            // Display version information below the buttons
             Padding(
               padding: const EdgeInsets.only(top: 16.0),
               child: Row(

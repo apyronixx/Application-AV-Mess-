@@ -1,5 +1,3 @@
-// GroupMessagesStream.dart
-
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:project_bucarest/screens/theme_provider.dart';
@@ -7,12 +5,12 @@ import 'package:provider/provider.dart';
 
 class GroupMessagesStream extends StatelessWidget {
   final String groupId;
-  final String currentUserEmail; // Add this field
+  final String currentUserEmail;
 
   const GroupMessagesStream({
     super.key,
     required this.groupId,
-    required this.currentUserEmail, // Initialize the new field
+    required this.currentUserEmail,
   });
 
   @override
@@ -39,7 +37,7 @@ class GroupMessagesStream extends StatelessWidget {
           final groupMessageBubble = GroupMessageBubble(
             sender: sender,
             text: text,
-            currentUserEmail: currentUserEmail, // Pass the current user's email
+            currentUserEmail: currentUserEmail,
           );
 
           messageBubbles.add(groupMessageBubble);
@@ -57,13 +55,13 @@ class GroupMessagesStream extends StatelessWidget {
 class GroupMessageBubble extends StatelessWidget {
   final String sender;
   final String text;
-  final String currentUserEmail; // Add this field
+  final String currentUserEmail;
 
   const GroupMessageBubble({
     super.key,
     required this.sender,
     required this.text,
-    required this.currentUserEmail, // Initialize the new field
+    required this.currentUserEmail,
   });
 
   @override
@@ -81,7 +79,7 @@ class GroupMessageBubble extends StatelessWidget {
               stream: FirebaseFirestore.instance.collection('users').where('email', isEqualTo: sender).snapshots(),
               builder: (context, snapshot) {
                 if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
-                  return Container(); // You can customize this placeholder if needed
+                  return Container();
                 } else {
                   final userData = snapshot.data!.docs[0].data();
                   final firstName = userData['firstName'] ?? '';

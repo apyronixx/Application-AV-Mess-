@@ -1,5 +1,3 @@
-// group_conversation_screen.dart
-
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -55,7 +53,7 @@ class _GroupConversationScreenState extends State<GroupConversationScreen> {
         .doc(groupId)
         .collection('messages')
         .add({
-      'sender': 'System',  // You can use a system user or any identifier
+      'sender': 'System',
       'text': 'Welcome to the group conversation!',
       'timestamp': FieldValue.serverTimestamp(),
     });

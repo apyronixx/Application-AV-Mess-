@@ -14,7 +14,7 @@ class ProfileManager {
         'lastName': newProfile.lastName,
         'profilePictureUrl': newProfile.profilePictureUrl,
         'bio': newProfile.bio,
-        'status': newProfile.status, // Update status
+        'status': newProfile.status,
       });
     }
   }

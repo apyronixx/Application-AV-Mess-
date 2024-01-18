@@ -65,7 +65,6 @@ class _ChatScreenState extends State<ChatScreen> {
                     child: TextField(
                       controller: _textController,
                       onChanged: (value) {
-                        // Do nothing for now
                       },
                       decoration: kMessageTextFieldDecoration,
                     ),

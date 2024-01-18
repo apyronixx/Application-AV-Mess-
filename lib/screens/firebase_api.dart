@@ -35,6 +35,4 @@ class FirebaseApi {
     if (message.data['collection'] == 'unreadMessages') {
     }
   }
-
-// Additional methods or logic as needed
 }

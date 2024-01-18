@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+
 class UserDetailsScreen extends StatelessWidget {
   final String userEmail;
 
@@ -58,7 +59,6 @@ class UserDetailsScreen extends StatelessWidget {
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 8.0),
-                // Wrap the bio in a SingleChildScrollView for scrolling
                 SingleChildScrollView(
                   child: Text(
                     bio,

@@ -1,4 +1,3 @@
-// drawer.dart
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -6,7 +5,7 @@ import 'package:magnifying_glass/magnifying_glass.dart';
 import 'package:project_bucarest/screens/welcome_screen.dart';
 import 'login_screen.dart';
 import 'theme_provider.dart';
-import 'profile_screen.dart'; // Import the profile screen
+import 'profile_screen.dart';
 import 'package:provider/provider.dart';
 
 class AppDrawer extends StatefulWidget {
@@ -140,7 +139,7 @@ class _AppDrawerState extends State<AppDrawer> {
               const SizedBox(height: 16), // Added space for separation
               Row(
                 children: [
-                  const Icon(Icons.wb_sunny, color: Colors.yellow), // Moon icon
+                  const Icon(Icons.wb_sunny, color: Colors.yellow),
                   const SizedBox(width: 8),
                   Switch(
                     value: themeProvider.isDarkMode,
@@ -151,7 +150,7 @@ class _AppDrawerState extends State<AppDrawer> {
                     activeTrackColor: ColorConstants.kPrimaryColor.withOpacity(0.5),
                   ),
                   const SizedBox(width: 8),
-                  Icon(Icons.dark_mode, color: themeProvider.isDarkMode ? Colors.white : Colors.black), // Sun icon
+                  Icon(Icons.dark_mode, color: themeProvider.isDarkMode ? Colors.white : Colors.black),
                 ],
               ),
               const Spacer(),

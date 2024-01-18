@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
@@ -59,7 +61,7 @@ class UnreadMessagesList extends StatelessWidget {
             var message = messages[index];
             var sender = message['sender'];
             var text = message['text'];
-            var timestamp = message['timestamp'].toDate(); // Convert to DateTime
+            var timestamp = message['timestamp'].toDate();
             var formattedTimestamp = DateFormat('EEEE, HH:mm').format(timestamp);
 
             return ListTile(

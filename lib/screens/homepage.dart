@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => NotificationsScreen(),
+                          builder: (context) => const NotificationsScreen(),
                         ),
                       );
                     },
@@ -182,7 +182,7 @@ class _HomePageState extends State<HomePage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => MeetingScreen(),
+                            builder: (context) => const MeetingScreen(),
                           ),
                         );
                       },
@@ -277,7 +277,7 @@ class ProfileHeader extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => ProfileScreen(),
+            builder: (context) => const ProfileScreen(),
           ),
         );
       },

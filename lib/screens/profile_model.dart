@@ -26,7 +26,6 @@ class UserProfile {
     );
   }
 
-  // Convert UserProfile to a map
   Map<String, dynamic> toMap() {
     return {
       'firstName': firstName,

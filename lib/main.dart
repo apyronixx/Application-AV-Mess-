@@ -22,7 +22,6 @@ void main() async {
   );
   await FirebaseApi().initNotifications();
 
-  // Set up the background message handler
   FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
 
   // Get the user's preferred locale from the phone settings
@@ -36,7 +35,6 @@ void main() async {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => ThemeProvider()),
-        // Add the following line for FirebaseAuth
         Provider<FirebaseAuth>(create: (_) => FirebaseAuth.instance),
       ],
       child: MyApp(preferredLocale: preferredLocale),
@@ -45,14 +43,13 @@ void main() async {
 }
 
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
-  // Handle FCM messages when the app is in the background
   print("Handling a background message: ${message.messageId}");
 }
 
 class MyApp extends StatelessWidget {
   final Locale preferredLocale;
 
-  const MyApp({Key? key, required this.preferredLocale}) : super(key: key);
+  const MyApp({super.key, required this.preferredLocale});
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +63,7 @@ class MyApp extends StatelessWidget {
       supportedLocales: const [
         Locale('en'),
         Locale('fr'),
-        Locale('es'), // Add this line
+        Locale('es'),
       ],
       localizationsDelegates: const [
         AppLocalizations.delegate,
@@ -74,10 +71,10 @@ class MyApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      home: WelcomeScreen(),
+      home: const WelcomeScreen(),
       navigatorKey: navigatorKey,
       routes: {
-        '/lib/screens/notification_screen.dart':(context) => NotificationsScreen(),
+        '/lib/screens/notification_screen.dart':(context) => const NotificationsScreen(),
       }
     );
   }

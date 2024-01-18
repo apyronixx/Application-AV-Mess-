@@ -134,7 +134,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     showSpinner = false;
                   });
 
-                  // ignore: use_build_context_synchronously
                   Navigator.pushReplacement(
                     context,
                     PageRouteBuilder(

@@ -32,7 +32,7 @@ class _GroupParticipantsScreenState extends State<GroupParticipantsScreen> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
-              'Group Name: ${widget.groupId}', // Use the groupId directly for the group name
+              'Group Name: ${widget.groupId}',
               style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 18.0,
